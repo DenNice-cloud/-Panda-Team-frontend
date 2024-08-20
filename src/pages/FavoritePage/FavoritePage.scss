@@ -1,0 +1,35 @@
+.favorite-page {
+  padding: 20px;
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // min-height: 100vh;
+  
+  &__empty-message {
+    color: #999;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+.header__button-favorite {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-image: url('../../icons/star-disabled.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+
+  &:hover {
+    background-image: url('../../icons/star-hover.svg');
+  }
+
+  &.active {
+    background-image: url('../../icons/star-active.svg');
+  }
+}

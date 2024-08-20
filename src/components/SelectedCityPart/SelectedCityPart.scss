@@ -1,0 +1,25 @@
+@import "styles/colors.scss";
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $border-color;
+  margin-top: 10px;
+  position: relative;
+
+  &__week {
+    padding: 10px;
+
+    &__detail {
+      padding: 10px;
+      margin: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      border: 1px solid $border-color;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+  }
+}
+
+

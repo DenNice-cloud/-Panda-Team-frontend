@@ -1,9 +1,12 @@
+@import 'styles/colors.scss';
+
 .currentCity {
+  z-index: 1;
   position: absolute;
   top: 29px;
   width: 100%;
-  border: 1px solid #ddd;
-  
+  border: 1px solid $border-color;
+
   &__button {
     padding: 5px;
     justify-content: space-between;
@@ -13,10 +16,10 @@
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-color: #ffffff;
+    background-color: $bg-border;
 
     &:hover {
-      background-color: #c5c5c5;
+      background-color: $bg-border-hover;
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     }
   }
@@ -24,4 +27,13 @@
   &__list_description {
     display: flex;
   }
+}
+
+.notFound {
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  background-color: $bg-border;
 }

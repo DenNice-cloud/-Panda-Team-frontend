@@ -1,0 +1,21 @@
+@import 'styles/colors.scss';
+
+.page-container-line {
+  margin-top: 20px;
+  border-bottom: 1px solid $red;
+}
+
+.add-more-button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: $bg-button;
+  cursor: pointer;
+  transition: background-color 0.1s;
+
+  &:hover {
+    background-color: $bg-button-hover;
+  }
+}
