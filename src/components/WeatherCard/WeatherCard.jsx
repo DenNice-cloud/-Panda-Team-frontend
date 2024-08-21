@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { fetchInputData, fetchWeatherByCity } from "../../utils/api";
 import "./WeatherCard.scss";
 
 const WeatherCard = ({
@@ -18,23 +16,21 @@ const WeatherCard = ({
     <div className="currentCity">
       {currentCity.length > 0 ? (
         <>
-          {currentCity.map((cityInfo, index) => (
+          {currentCity.map((cityInfo) => (
             <button
               key={cityInfo.id}
               className="currentCity__button"
               onClick={() => handleCityClick(cityInfo)}
             >
               <div className="currentCity__list_description">
-                {cityInfo.name}, 
-                {cityInfo.sys.country}
+                {`${cityInfo.name}, ${cityInfo.sys.country}`}
               </div>
               <div className="currentCity__list_description">
-                Coord: {cityInfo.coord.lat}; {cityInfo.coord.lon}
+                Координати: {cityInfo.coord.lat}; {cityInfo.coord.lon}
               </div>
               <div className="currentCity__list_description">
-                Weather: {cityInfo.weather[0].main}
+                Погода: {cityInfo.weather[0].main}
               </div>
-              <div className="currentCity__list_description"></div>
             </button>
           ))}
         </>

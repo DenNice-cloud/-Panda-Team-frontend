@@ -43,8 +43,7 @@ const SelectedCityPart = ({
     };
 
     fetchWeekData();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedBlock]);
+  }, [selectedBlock, selectedCity.name]);
 
   return (
     <div className="info-container">
@@ -54,14 +53,14 @@ const SelectedCityPart = ({
           onClick={() => changeBlock("Day")}
           disabled={currentBlock}
         >
-          Day
+          День
         </button>
         <button
           className="info-container__block__button"
           onClick={() => changeBlock("Week")}
           disabled={!currentBlock}
         >
-          Week
+          Тиждень
         </button>
       </div>
 

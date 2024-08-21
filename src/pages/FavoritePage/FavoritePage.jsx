@@ -11,7 +11,7 @@ const FavoritePage = () => {
         selectedFavorite.map((selectedCity) => (
           <div key={selectedCity.id}>
             <button
-              className="header__button-favorite active"
+              className="header__button-favorite-f active"
               onClick={() => addToFavorite(selectedCity)}
             ></button>
 

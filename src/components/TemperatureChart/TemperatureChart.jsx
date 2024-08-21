@@ -56,7 +56,7 @@ const TemperatureChart = ({ selectedCity }) => {
     labels,
     datasets: [
       {
-        label: "Temperature",
+        label: "Температура",
         data: temperatures,
         borderColor: "rgba(75, 192, 192, 1)",
         backgroundColor: "rgba(75, 192, 192, 0.2)",

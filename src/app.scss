@@ -1,4 +1,4 @@
-@import 'styles/colors.scss';
+@import "styles/colors.scss";
 
 * {
   margin: 0;
@@ -12,20 +12,20 @@
   padding: 20px;
   margin: 0 auto;
   width: 100%;
-  border: 1px solid $red;
+  border: 1px solid $border-color;
 }
 
 .page-container {
   width: 100%;
   padding: 0 20px;
   min-height: 600px;
-  border: 1px solid $red;
+  border: 1px solid $border-color;
 }
 
 .page {
   margin: 0 auto;
   gap: 10px;
-  
+
   .main-page__button,
   .favorite-page__button {
     padding: 10px 20px;
@@ -44,5 +44,3 @@
     }
   }
 }
-
-

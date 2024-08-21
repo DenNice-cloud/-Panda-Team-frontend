@@ -1,4 +1,4 @@
-@import 'styles/colors.scss';
+@import "styles/colors.scss";
 
 .currentCity {
   z-index: 1;
@@ -10,13 +10,15 @@
   &__button {
     padding: 5px;
     justify-content: space-between;
-    display: flex;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     border: none;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
     background-color: $bg-border;
+
 
     &:hover {
       background-color: $bg-border-hover;

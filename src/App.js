@@ -18,14 +18,14 @@ const App = () => {
           onClick={() => changePage("Main")}
           disabled={currentPage}
         >
-          Main
+          Головна
         </button>
         <button
           className="favorite-page__button"
           onClick={() => changePage("Favorite")}
           disabled={!currentPage}
         >
-          Favorite
+          Улюблене
         </button>
 
         <div className="page-container">

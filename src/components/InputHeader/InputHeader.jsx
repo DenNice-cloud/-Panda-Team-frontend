@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import WeatherCard from "../WeatherCard/WeatherCard";
 import SelectedCityPart from "../SelectedCityPart/SelectedCityPart";
@@ -55,7 +54,7 @@ const InputHeader = ({ block, inputBlocks, setInputBlocks }) => {
               type="text"
               value={query}
               onChange={handleInputChange}
-              placeholder="Search city..."
+              placeholder="Пошук країни..."
               className="input-container__bar-layer"
             />
 
@@ -83,7 +82,7 @@ const InputHeader = ({ block, inputBlocks, setInputBlocks }) => {
           className="remove-button__style"
           onClick={() => handleRemoveBlock(block.id)}
         >
-          Remove
+          Видалити
         </button>
       </div>
     </>

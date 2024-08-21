@@ -11,29 +11,27 @@
     justify-content: center;
     align-items: center;
   }
-}
 
-.header__button-favorite {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  background-image: url('../../icons/star-disabled.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
+  &__button-favorite {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-image: url("../../icons/star-disabled.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
 
-  &:hover {
-    background-image: url('../../icons/star-hover.svg');
+    &:hover {
+      background-image: url("../../icons/star-hover.svg");
+    }
+
+    &.active {
+      background-image: url("../../icons/star-active.svg");
+    }
   }
-
-  &.active {
-    background-image: url('../../icons/star-active.svg');
-  }
 }
-
-
 
 .input-container {
   display: flex;

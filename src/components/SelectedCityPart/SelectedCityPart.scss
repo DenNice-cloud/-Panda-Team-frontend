@@ -17,9 +17,7 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       border: 1px solid $border-color;
       border-radius: 8px;
-      background-color: #f9f9f9;
+      background-color: $info-bg-color;
     }
   }
 }
-
-

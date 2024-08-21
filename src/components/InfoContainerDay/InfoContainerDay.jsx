@@ -7,31 +7,31 @@ const InfoContainerDay = ({ selectedCity }) => {
       <p>{`${selectedCity.name}, ${selectedCity.sys.country}`}</p>
 
       <p>
-        Coord: {selectedCity.coord.lat}; {selectedCity.coord.lon}
+      Координати: {selectedCity.coord.lat}; {selectedCity.coord.lon}
       </p>
 
       <div className="info-container__description__detail" />
 
       <p>
-        <strong>Temperature:</strong> {Math.round(selectedCity.main.temp)}
+        <strong>Температура:</strong> {Math.round(selectedCity.main.temp)}
         °С
       </p>
 
       <p>
-        <strong>Humidity:</strong> {Math.round(selectedCity.main.humidity)}%
+        <strong>Вологість:</strong> {Math.round(selectedCity.main.humidity)}%
       </p>
 
       <p>
-        <strong>Feels like:</strong> {Math.round(selectedCity.main.feels_like)}°С
+        <strong>Відчувається як:</strong> {Math.round(selectedCity.main.feels_like)}°С
       </p>
 
       <p>
-        <strong>Sea level:</strong> {selectedCity.main.sea_level} hPa
+        <strong>Рівень моря:</strong> {selectedCity.main.sea_level} hPa
       </p>
       
       {selectedCity.visibility && (
         <p>
-          <strong>Visibility:</strong> {(selectedCity.visibility / 1000).toFixed(1)} km
+          <strong>Видимість:</strong> {(selectedCity.visibility / 1000).toFixed(1)} km
         </p>
       )}
 
@@ -40,14 +40,14 @@ const InfoContainerDay = ({ selectedCity }) => {
           key={weather.id}
           className="info-container__weather"
         >
-          <span>Weather: {weather.main}</span>
-          <span>More detail: {weather.description}</span>
+          <span>Погода: {weather.main}</span>
+          <span>Детальніше: {weather.description}</span>
         </div>
       ))}
 
-      <p>Rain: {selectedCity.rain ? `${selectedCity.rain["1h"]} hour` : "None"}</p>
+      <p>Дощить: {selectedCity.rain ? `${selectedCity.rain["1h"]} hour` : "Нема"}</p>
 
-      <p>Snow: {selectedCity.snow ? `${selectedCity.snow["1h"]} hour` : "None"}</p>
+      <p>Сніжно: {selectedCity.snow ? `${selectedCity.snow["1h"]} hour` : "Нема"}</p>
 
       <TemperatureChart selectedCity={selectedCity} />
     </div>
