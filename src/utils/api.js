@@ -16,5 +16,5 @@ export const fetchWeatherByCityForWeek = (city) => {
 };
 
 export const fetchInputData = (city) => {
-  return axios.get(`${BASE_URL}find?q=${city}&appid=${API_KEY}`);
+  return axios.get(`${BASE_URL}find?q=${city}&appid=${API_KEY}&units=metric`);
 };
