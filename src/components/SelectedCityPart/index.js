@@ -1,1 +1,1 @@
-export { default } from './SelectedCityPart';
+export { default } from "./SelectedCityPart";
