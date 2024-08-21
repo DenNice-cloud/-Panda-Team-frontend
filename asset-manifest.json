@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Panda-Team-frontend/static/css/main.80f6713e.css",
-    "main.js": "/Panda-Team-frontend/static/js/main.42215f55.js",
+    "main.js": "/Panda-Team-frontend/static/js/main.27633e1c.js",
     "index.html": "/Panda-Team-frontend/index.html",
     "static/media/star-hover.svg": "/Panda-Team-frontend/static/media/star-hover.25d8535fc4321e60bbc9.svg",
     "static/media/star-disabled.svg": "/Panda-Team-frontend/static/media/star-disabled.8bf19985165570434b5e.svg",
     "static/media/star-active.svg": "/Panda-Team-frontend/static/media/star-active.4c0cf94535e4d06a24d2.svg",
     "main.80f6713e.css.map": "/Panda-Team-frontend/static/css/main.80f6713e.css.map",
-    "main.42215f55.js.map": "/Panda-Team-frontend/static/js/main.42215f55.js.map"
+    "main.27633e1c.js.map": "/Panda-Team-frontend/static/js/main.27633e1c.js.map"
   },
   "entrypoints": [
     "static/css/main.80f6713e.css",
-    "static/js/main.42215f55.js"
+    "static/js/main.27633e1c.js"
   ]
 }
