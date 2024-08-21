@@ -1,5 +1,5 @@
 import TemperatureChart from "components/TemperatureChart";
-import "./InfoContainerDay.scss"
+import "./InfoContainerDay.scss";
 
 const InfoContainerDay = ({ selectedCity }) => {
   return (
@@ -7,7 +7,7 @@ const InfoContainerDay = ({ selectedCity }) => {
       <p>{`${selectedCity.name}, ${selectedCity.sys.country}`}</p>
 
       <p>
-      Координати: {selectedCity.coord.lat}; {selectedCity.coord.lon}
+        Координати: {selectedCity.coord.lat}; {selectedCity.coord.lon}
       </p>
 
       <div className="info-container__description__detail" />
@@ -22,16 +22,18 @@ const InfoContainerDay = ({ selectedCity }) => {
       </p>
 
       <p>
-        <strong>Відчувається як:</strong> {Math.round(selectedCity.main.feels_like)}°С
+        <strong>Відчувається як:</strong>{" "}
+        {Math.round(selectedCity.main.feels_like)}°С
       </p>
 
       <p>
         <strong>Рівень моря:</strong> {selectedCity.main.sea_level} hPa
       </p>
-      
+
       {selectedCity.visibility && (
         <p>
-          <strong>Видимість:</strong> {(selectedCity.visibility / 1000).toFixed(1)} km
+          <strong>Видимість:</strong>{" "}
+          {(selectedCity.visibility / 1000).toFixed(1)} km
         </p>
       )}
 
@@ -45,9 +47,13 @@ const InfoContainerDay = ({ selectedCity }) => {
         </div>
       ))}
 
-      <p>Дощить: {selectedCity.rain ? `${selectedCity.rain["1h"]} hour` : "Нема"}</p>
+      <p>
+        Дощить: {selectedCity.rain ? `${selectedCity.rain["1h"]} hour` : "Нема"}
+      </p>
 
-      <p>Сніжно: {selectedCity.snow ? `${selectedCity.snow["1h"]} hour` : "Нема"}</p>
+      <p>
+        Сніжно: {selectedCity.snow ? `${selectedCity.snow["1h"]} hour` : "Нема"}
+      </p>
 
       <TemperatureChart selectedCity={selectedCity} />
     </div>

@@ -3,11 +3,11 @@ import "./app.scss";
 import { MainPage, FavoritePage } from "pages";
 
 const App = () => {
-  const [selectedPage, setSelectedPage] = useState("Main");
-  const currentPage = selectedPage === "Main";
+  const [selectedTab, setSelectedTab] = useState("Main");
+  const currentTab = selectedTab === "Main";
 
   const changePage = (page) => {
-    setSelectedPage(page);
+    setSelectedTab(page);
   };
 
   return (
@@ -16,20 +16,20 @@ const App = () => {
         <button
           className="main-page__button"
           onClick={() => changePage("Main")}
-          disabled={currentPage}
+          disabled={currentTab}
         >
           Головна
         </button>
         <button
           className="favorite-page__button"
           onClick={() => changePage("Favorite")}
-          disabled={!currentPage}
+          disabled={!currentTab}
         >
           Улюблене
         </button>
 
         <div className="page-container">
-          {currentPage ? <MainPage /> : <FavoritePage />}
+          {currentTab ? <MainPage /> : <FavoritePage />}
         </div>
       </div>
     </div>

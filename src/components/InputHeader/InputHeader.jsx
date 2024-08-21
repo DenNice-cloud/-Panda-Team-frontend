@@ -40,8 +40,8 @@ const InputHeader = ({ block, inputBlocks, setInputBlocks }) => {
 
   useEffect(() => {
     if (selectedCity) {
-      const test = selectedFavorite.some((fav) => fav.id === selectedCity.id);
-      setIsFavoriteButton(test);
+      const alreadyFavorite = selectedFavorite.some((fav) => fav.id === selectedCity.id);
+      setIsFavoriteButton(alreadyFavorite);
     }
   }, [selectedFavorite, query]);
 
