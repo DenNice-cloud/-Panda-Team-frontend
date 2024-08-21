@@ -8,7 +8,7 @@
 - OpenWeatherMap API (Weather data)
 
 ## Frontend
-# Project Description
+### Project Description
 This project is a weather application built using React. It allows users to search for cities, view current weather data, and save favorite cities. The app includes features like autocomplete for city search, adding multiple input fields, and managing favorites with a 5-city limit stored in localStorage.
 
 ## Setup Instructions
